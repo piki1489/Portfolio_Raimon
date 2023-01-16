@@ -1,62 +1,86 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  min-height: 90vh;
-  gap: 10em;
+  gap: 5em;
 }
 
 .container div {
-  width: 100%;
+  width: 75%;
+  margin: 0 auto;
+
 }
 
 h2 {
   -webkit-text-stroke: 1px rgb(21, 9, 9);
   color: transparent;
+  font-family: 'Poppins', sans-serif;
 }
 
 .photo {
-  margin-top: 100px;
   background-image: url('../../images/_DSC0172.JPG');
   background-size: cover;
-  border: 2px solid rgb(21, 9, 9);
-  border-radius: 35%;
-  height: 50vh;
+  border: 5px solid #FDC930;
+  border-radius: 5%;
+  height: 80vh;
+}
+
+.photo:hover {
+  border-radius: 15%;
+  -webkit-border-radius: 25%;
+  box-shadow: 0px 0px 15px 15px #ec731e;
+  -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
 }
 
 .my {
   text-align: center;
   font-size: 40px;
+  padding-top: 30px;
 }
 
 .my:hover {
-  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  background-color: #FDC930;
+  border-radius: 15%;
+  -webkit-border-radius: 25%;
+  box-shadow: 0px 0px 15px 15px #ec731e;
+  -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
 }
 
 span {
   color: red;
+  font-family: 'Rowdies', cursive;
+}
+
+p {
+  font-size: 15px;
 }
 
 .underline {
   position: relative;
-  width: 6.250em;
-  margin: 0 auto;
-  color: rgb(100, 139, 33);
-  font-weight: 700;
   text-align: center;
 }
 
 .underline span {
   position: absolute;
-  top: -0.4em;
-  -webkit-text-stroke: 1px rgb(21, 9, 9);
+  top: -0.7em;
+  -webkit-text-stroke: 1px #FDC930;
   color: transparent;
+}
+
+.underline hr {
+  color: #FDC930;
 }
 
 .works {
   text-align: center;
   font-size: 40px;
+  padding-top: 30px;
 }
 
 .works:hover {
-  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  background-color: #FDC930;
+
 }
