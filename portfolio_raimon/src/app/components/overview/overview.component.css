@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 30px;
+}
+
+h2 {
+  -webkit-text-stroke: 1px rgb(21, 9, 9);
+  color: transparent;
+}
+
+.photo {
+  background-image: url('../../images/_DSC0253.JPG');
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 35%;
+  height: 40vh;
+  width: 20vw;
+}
+
+.my {
+  border: 2px solid black;
+  border-radius: 35%;
+}
+
+.works {
+  border: 2px solid black;
+  border-radius: 35%;
+}
