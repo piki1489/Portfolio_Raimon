@@ -2,11 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   min-height: 90vh;
-  gap: 10em;
+  gap: 7em;
+
 }
 
 .container div {
-  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 h2 {
@@ -19,13 +21,34 @@ h2 {
   background-image: url('../../images/_DSC0172.JPG');
   background-size: cover;
   border: 2px solid rgb(21, 9, 9);
-  border-radius: 35%;
+  border-radius: 5%;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
   height: 50vh;
+  width: 50%;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .4);
+  opacity: 0;
+  transition: .5s;
+}
+
+.photo:hover .content {
+  opacity: 1;
 }
 
 .my {
   text-align: center;
   font-size: 40px;
+  width: 50%;
+  padding-top: 30px;
 }
 
 .my:hover {
@@ -43,6 +66,7 @@ span {
   color: rgb(100, 139, 33);
   font-weight: 700;
   text-align: center;
+  width: 50%;
 }
 
 .underline span {
@@ -55,6 +79,7 @@ span {
 .works {
   text-align: center;
   font-size: 40px;
+  width: 50%;
 }
 
 .works:hover {
