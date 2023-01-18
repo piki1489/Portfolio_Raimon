@@ -1,16 +1,13 @@
-.container {
-  transform: matrix();
-}
-
 .link {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
   transition: 1s;
 }
 
-a:hover {
-  background-color: rgb(236, 207, 172);
+.link div a i {
+  font-size: 40px;
+  padding: .5em;
+  color: black;
 }
 
 .link div {

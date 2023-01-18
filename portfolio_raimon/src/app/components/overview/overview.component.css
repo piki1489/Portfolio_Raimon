@@ -1,23 +1,25 @@
 .container {
   display: flex;
-  flex-wrap: wrap;
-  min-height: 90vh;
-  gap: 7em;
-
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
 }
 
-.container div {
-  max-width: 100%;
-  margin: 0 auto;
-  transition: .5s;
+#titleHover {
+  font-size: 30px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: rgb(220, 227, 89);
 }
 
 h2 {
-  -webkit-text-stroke: 1px rgb(21, 9, 9);
-  color: transparent;
+  color: black;
+  font-family: 'Oswald', sans-serif;
 }
 
-h3 {}
+h3 {
+  font-size: 25px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
 
 p {
   color: white;
@@ -25,14 +27,13 @@ p {
 }
 
 .photo {
-  margin-top: 100px;
   background-image: url('../../images/_DSC0172.JPG');
   background-size: cover;
   border: 2px solid rgb(21, 9, 9);
   border-radius: 5%;
   box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
   height: 50vh;
-  width: 50%;
+  width: 50vw;
   overflow: hidden;
 }
 
@@ -66,52 +67,23 @@ p {
 }
 
 .my {
+  height: 50vh;
+  width: 50vw;
+  display: flex;
   text-align: center;
-  font-size: 40px;
-  width: 50%;
-  padding-top: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  border-radius: 5%;
+  margin-right: 30px;
 }
 
-.my:hover {
-  background-color: rgb(236, 207, 172);
+.info {
+  width: 100vw;
+  padding: 5em;
 }
 
-span {
+.my span {
+  font-family: 'Beth Ellen', cursive;
   color: red;
-}
-
-.underline {
-  position: relative;
-  width: 6.250em;
-  margin: 0 auto;
-  color: rgb(100, 139, 33);
-  font-weight: 700;
-  text-align: center;
-  width: 50%;
-}
-
-.underline span {
-  position: absolute;
-  top: -0.4em;
-  -webkit-text-stroke: 1px rgb(21, 9, 9);
-  color: transparent;
-}
-
-.works {
-  text-align: center;
-  font-size: 40px;
-  width: 50%;
-  transition: .5s;
-}
-
-.works:hover {
-  background-color: rgb(236, 207, 172);
-}
-
-.works .blog {
-  background-image: url('../../images/trabajo_angular.jpg');
-
-  height: 300px;
-  width: 500px;
-  background-size: cover;
 }
