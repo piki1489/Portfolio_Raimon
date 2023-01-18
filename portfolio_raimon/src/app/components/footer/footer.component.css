@@ -1,5 +1,3 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
-
 .container {
   transform: matrix();
 }
@@ -11,8 +9,8 @@
   transition: 1s;
 }
 
-.link:hover {
-  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+a:hover {
+  background-color: rgb(236, 207, 172);
 }
 
 .link div {

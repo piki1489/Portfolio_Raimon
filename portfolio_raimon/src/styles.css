@@ -1,13 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+/* body {
   background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+} */
+body {
+  background-color: rgb(220, 227, 89);
 }
