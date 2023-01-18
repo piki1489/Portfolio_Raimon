@@ -1,10 +1,18 @@
 <div class="container">
   <nav>
     <ul>
-      <li>INICIO</li>
-      <li>SOBRE MI</li>
-      <li>TRABAJOS</li>
-      <li>CONTACTO</li>
+      <li>
+        <a [routerLink]="['/overview']" href="">INICIO</a>
+      </li>
+      <li>
+        <a href="">SOBRE MI</a>
+      </li>
+      <li>
+        <a [routerLink]="['/works']" href="">TRABAJOS</a>
+      </li>
+      <li>
+        <a href="">CONTACTO</a>
+      </li>
     </ul>
   </nav>
 </div>

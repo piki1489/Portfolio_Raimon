@@ -6,10 +6,10 @@ import { OverviewComponent } from './components/overview/overview.component';
 import { WorksComponent } from './components/works/works.component';
 
 const routes: Routes = [
-  { path: '/overview', component: OverviewComponent },
-  { path: '/overview', component: FooterComponent },
-  { path: '/overview', component: WorksComponent },
-  { path: '/overview', component: NavComponent }
+  { path: 'overview', component: OverviewComponent },
+  { path: 'footer', component: FooterComponent },
+  { path: 'works', component: WorksComponent },
+  { path: 'overview', component: NavComponent }
 ];
 
 @NgModule({
