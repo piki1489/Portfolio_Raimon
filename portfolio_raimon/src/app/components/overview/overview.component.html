@@ -1,42 +1,45 @@
-<div class="container">
-  <div class="my">
-    <h2>HOLA! MI NOMBRE ES RAIMON <br>
-      SOY <span>DEVELOPER</span> FULL-STACK</h2>
+<!-- overview.component.html -->
+<div class="about">
+  <h3>
+    Soy <span>Raimon</span>, un apasionado de la <span>programación</span> y un
+    amante entusiasta de los <span>viajes</span>. Transformo ideas en código, y
+    cada aventura alimenta mi creatividad. <br />¡Bienvenido a mi mundo de
+    programación y descubrimientos!
+  </h3>
+</div>
+
+<div class="carrusel">
+  <div class="atras" (click)="atras()">
+    <i class="fa-solid fa-circle-arrow-left" loading="lazy"></i>
   </div>
-  <div class="photo">
-    <div class="content">
-      <div id="titleHover">SKILLS</div>
-      <div>
-        <h3> HTML</h3>
-      </div>
-      <div>
-        <h3> CSS</h3>
-      </div>
-      <div>
-        <h3> JS</h3>
-      </div>
-      <div>
-        <h3> ANGULAR</h3>
-      </div>
-      <div>
-        <h3> NODE JS</h3>
-      </div>
-      <div>
-        <h3> EXPRESS</h3>
-      </div>
-      <div>
-        <h3> MONGO DB</h3>
-      </div>
-      <div>
-        <h3> BOOTSTRAP</h3>
-      </div>
-      <div>
-        <h3> MYSQL</h3>
-      </div>
+
+  <div class="imagenes">
+    <div id="img">
+      <img
+        class="img"
+        [src]="imagenes[actual].url"
+        alt="imagen 1"
+        loading="lazy"
+      />
+    </div>
+
+    <div id="texto" class="texto">
+      <h3>{{ imagenes[actual].nombre }}</h3>
+      <p>{{ imagenes[actual].descripcion }}</p>
     </div>
   </div>
+
+  <div class="adelante" (click)="adelante()">
+    <i class="fa-solid fa-circle-arrow-right" loading="lazy"></i>
+  </div>
 </div>
-<div class="info">
-  <h2>UN POCO MÁS SOBRE MI</h2>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet perspiciatis a blanditiis repudiandae voluptatem! Labore quos doloribus, tempora eveniet hic debitis at asperiores temporibus! Necessitatibus accusantium mollitia nihil dolor aliquam?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam culpa mollitia ad, quae harum odio commodi omnis, nobis maiores, est adipisci quos ratione totam et? Maxime reiciendis aliquam voluptates in?</p>
+
+<div class="puntos">
+  <p
+    *ngFor="let punto of puntos"
+    [class.bold]="punto === actual"
+    (click)="irAImagen(punto)"
+  >
+    .
+  </p>
 </div>

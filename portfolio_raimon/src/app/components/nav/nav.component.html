@@ -1,18 +1,26 @@
-<div class="container">
-  <nav>
-    <ul>
-      <li>
-        <a [routerLink]="['/overview']" href="">INICIO</a>
-      </li>
-      <li>
-        <a href="">SOBRE MI</a>
-      </li>
-      <li>
-        <a [routerLink]="['/works']" (click)="onClick('/works')" href="">TRABAJOS</a>
-      </li>
-      <li>
-        <a href="">CONTACTO</a>
-      </li>
-    </ul>
-  </nav>
+<div class="cabecera">
+  <div class="container">
+    <!-- <div class="fila">
+      <h1><img src="./assets/images/raimon.png" alt="Logo Raimon" /></h1>
+
+    </div> -->
+    <nav>
+      <ul>
+        <li>
+          <a [routerLink]="['/overview']" href="">INICIO</a>
+        </li>
+        <li>
+          <a href="">SOBRE MI</a>
+        </li>
+        <li>
+          <a [routerLink]="['/works']" (click)="onClick('/works')" href=""
+            >TRABAJOS</a
+          >
+        </li>
+        <li>
+          <a href="">CONTACTO</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </div>

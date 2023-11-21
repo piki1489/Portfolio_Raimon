@@ -1,11 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap");
+@import "~bootstrap/dist/css/bootstrap.min.css";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  color: black;
+  font-size: 1rem;
+  font-family: "Montserrat", "sans-serif";
+}
+
+.container {
+  /* DISEÑO FLEXIBLE - CENTRADO -CON LIMITES PARA PANTALLAS GRANDES */
+  width: 90%;
+  margin: auto;
+  max-width: 1600px;
 }
 
 /* body {
@@ -14,6 +29,3 @@
   background-size: cover;
   height: 100%;
 } */
-body {
-  background-color: rgb(220, 227, 89);
-}
