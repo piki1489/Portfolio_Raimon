@@ -16,16 +16,26 @@ body {
   padding-top: 70px;
   overflow: hidden;
 }
+#works {
+  cursor: url("../../../assets/images/javascript-logo-escudo.png"), auto;
+}
+
+/* .about {
+  background-image: url(/assets/images/imagen12.jpg);
+} */
 
 .about h3 {
   margin: 0 auto;
   max-width: 75%;
   text-align: center;
-  padding: 2em 0 2em 0;
+  padding: 1em 0 1em 0;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5em;
 }
 
 .about h3 span {
-  color: rgb(90, 0, 0);
+  color: #2d9596;
+  font-size: 1.3em;
 }
 
 .carrusel {
@@ -41,12 +51,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .fa-solid {
   font-size: 3em;
-  color: rgb(90, 0, 0);
+  color: #265073;
 }
 
 .img {
@@ -56,7 +66,7 @@ body {
   border-radius: 15px;
   margin: 5px;
   object-fit: cover;
-  filter: saturate(175%) brightness(0.5); /* Ajusta el valor de brightness según tus preferencias */
+  /* filter: saturate(175%) brightness(0.8); Ajusta el valor de brightness según tus preferencias */
 }
 
 .texto {
@@ -127,5 +137,5 @@ body {
   font-weight: 700;
   margin-left: 10px;
   margin-right: 10px;
-  color: #5e17eb;
+  color: #265073;
 }

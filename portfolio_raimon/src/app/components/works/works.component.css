@@ -1,4 +1,4 @@
-.container {
+.works {
   width: 100%;
   max-width: 1200px;
   height: 430px;
@@ -8,40 +8,43 @@
   margin: auto;
 }
 
-.container .card {
+.works .card {
   width: 330px;
-  height: 430px;
+  height: 18em;
   border-radius: 8px;
   box-shadow: 0 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   margin: 20px;
   text-align: center;
   transition: all 0.25s;
+  background-color: #265073;
+  color: #ecf4d6;
+  font-family: "Familjen Grotesk", sans-serif;
 }
 
-.container .card:hover {
+.works .card:hover {
   transform: translateY(-15px);
   box-shadow: 0 2px rgba(0, 0, 0, 0.2);
 }
 
-.container .card img {
+.works .card img {
   width: 330px;
   height: 220px;
 }
 
-.container .card h4 {
+.works .card h4 {
   font-weight: 600;
 }
 
-.container .card p {
+.works .card p {
   padding: 0 1rem;
   font-size: 16px;
   font-weight: 300;
   color: white;
 }
 
-.container .card a {
+.works .card a {
   font-weight: 500;
   text-decoration: none;
-  color: #3498db;
+  color: #265073;
 }

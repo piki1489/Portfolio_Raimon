@@ -8,12 +8,12 @@ import { WorksComponent } from './components/works/works.component';
 const routes: Routes = [
   { path: 'overview', component: OverviewComponent },
   { path: 'footer', component: FooterComponent },
-  { path: 'works', component: WorksComponent },
-  { path: 'nav', component: NavComponent }
+  // { path: 'works', component: WorksComponent },
+  { path: 'nav', component: NavComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
